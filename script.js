@@ -28,7 +28,7 @@ try{
         tr.appendChild(tdEndereco);
 
         const tdCidade = document.createElement('td');
-        tdCidade.textContent = `${user.address.city}`;
+        tdCidade.textContent = user.address.city;
         tr.appendChild(tdCidade);
 
         const tdTelefone = document.createElement('td');
@@ -36,7 +36,7 @@ try{
         tr.appendChild(tdTelefone);
 
         const tdEmpresa = document.createElement('td');
-        tdEmpresa.textContent = `${user.company.name}`;
+        tdEmpresa.textContent = user.company.name;
         tr.appendChild(tdEmpresa);
 
         corpoTabela.appendChild(tr);
